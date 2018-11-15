@@ -220,6 +220,11 @@
 				function = "spi0";
 			};
 
+			spi1_pins_a: spi1-pins-pc {
+				pins = "PE9", "PE7", "PE10", "PE8";
+				function = "spi1";
+			};			
+
 			lcd_rgb666_pins: lcd-rgb666-pins {
 				pins = "PD0", "PD1", "PD2", "PD3", "PD4",
 				       "PD5", "PD6", "PD7", "PD8", "PD9",
