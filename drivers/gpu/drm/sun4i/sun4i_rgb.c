@@ -92,7 +92,7 @@ static enum drm_mode_status sun4i_rgb_mode_valid(struct drm_encoder *crtc,
 
 	DRM_DEBUG_DRIVER("Vertical parameters OK\n");
 
-	if (connector->connector_type != DRM_MODE_CONNECTOR_Unknown) {
+	if (rgb->connector.connector_type != DRM_MODE_CONNECTOR_Unknown) {
 		rounded_rate = clk_round_rate(tcon->dclk, rate);
 		if (rounded_rate < rate)
 			return MODE_CLOCK_LOW;
